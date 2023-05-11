@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pr_3d", "pr_3d\pr_3d.csproj", "{4E46FA2D-7F17-4E92-8D9C-303F6D56BAFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E46FA2D-7F17-4E92-8D9C-303F6D56BAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E46FA2D-7F17-4E92-8D9C-303F6D56BAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E46FA2D-7F17-4E92-8D9C-303F6D56BAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E46FA2D-7F17-4E92-8D9C-303F6D56BAFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5B31589-B123-4001-91C0-5F59DC4BDBAF}
+	EndGlobalSection
+EndGlobal

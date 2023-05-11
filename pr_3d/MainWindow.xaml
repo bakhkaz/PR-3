@@ -1,0 +1,133 @@
+﻿<Window x:Class="pr_3d.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr_3d"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="694" Width="802">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="155*"/>
+            <ColumnDefinition Width="560*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Background="LightBlue" Grid.ColumnSpan="2" Margin="0,0,110,334">
+            <TextBlock Text="Спорт"  Width="195" Height="60" FontSize="20" >
+
+            </TextBlock>
+            <Button x:Name="b1" Content="100" Height="65" Width="75" Click="Button_Click_1"/>
+            <Button x:Name="b2" Content="200" Height="65" Width="75" Click="b2_Click"/>
+            <Button x:Name="b3" Content="300" Height="65" Width="75" Click="b3_Click"/>
+            <Button x:Name="b4"  Content="400" Height="65" Width="75" Click="b4_Click"/>
+            <Button x:Name="b5" Content="500" Height="65" Width="75" Click="b5_Click"/>
+        </WrapPanel>
+        <Border></Border>
+        <WrapPanel Margin="0,70,110,456" Background="LightBlue" Grid.ColumnSpan="2">
+            <TextBlock Text="Слова со всего мира"  Width="195" Height="60" FontSize="20" />
+            <Button x:Name="b6" Content="100" Height="65" Width="75" Click="Button_Click_4"/>
+            <Button x:Name="b7" Content="200" Height="65" Width="75" Click="Button_Click_5"/>
+            <Button x:Name="b8" Content="300" Height="65" Width="75" Click="Button_Click_6"/>
+            <Button x:Name="b9" Content="400" Height="65" Width="75" Click="Button_Click_7"/>
+            <Button x:Name="b10" Content="500" Height="65" Width="75" Click="Button_Click_8"/>
+
+        </WrapPanel>
+        <WrapPanel Margin="0,140,110,194" Background="LightBlue" Grid.ColumnSpan="2">
+            <TextBlock  Text="Музыка"  Width="195" Height="60" FontSize="20" />
+            <Button  x:Name="b11" Content="100" Height="65" Width="75" Click="Button_Click_9"/>
+            <Button x:Name="b12" Content="200" Height="65" Width="75" Click="Button_Click_10"/>
+            <Button  x:Name="b13" Content="300" Height="65" Width="75" Click="Button_Click_11"/>
+            <Button  x:Name="b14" Content="400" Height="65" Width="75" Click="Button_Click_12"/>
+            <Button  x:Name="b15" Content="500" Height="65" Width="75" Click="Button_Click_13"/>
+
+        </WrapPanel>
+        <WrapPanel Margin="0,210,110,194" Background="LightBlue" Grid.ColumnSpan="2">
+            <TextBlock Text="Биология"  Width="195" Height="63" FontSize="20" />
+            <Button x:Name="b16" Content="100" Height="65" Width="75" Click="Button_Click_14"/>
+            <Button x:Name="b17" Content="200" Height="65" Width="75" Click="Button_Click_15"/>
+            <Button x:Name="b18" Content="300" Height="65" Width="75" Click="Button_Click_16"/>
+            <Button x:Name="b19" Content="400" Height="65" Width="75" Click="Button_Click_17"/>
+            <Button x:Name="b20" Content="500" Height="65" Width="75" Click="Button_Click_18"/>
+
+        </WrapPanel>
+        <WrapPanel Margin="0,280,110,259" Background="LightBlue" Grid.ColumnSpan="2">
+            <TextBlock Text="История"  Width="195" Height="60" FontSize="20" />
+            <Button x:Name="b21" Content="100" Height="65" Width="75" Click="Button_Click_19"/>
+            <Button x:Name="b22" Content="200" Height="65" Width="75" Click="Button_Click_20"/>
+            <Button x:Name="b23" Content="300" Height="65" Width="75" Click="Button_Click_21"/>
+            <Button x:Name="b24" Content="400" Height="65" Width="75" Click="Button_Click_22"/>
+            <Button  x:Name="b25" Content="500" Height="65" Width="75" Click="Button_Click_23"/>
+
+        </WrapPanel>
+        <WrapPanel Margin="0,350,0,146" Background="LightBlue" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="605">
+            <TextBlock Text="Информатика"  Width="195" Height="60" FontSize="20" />
+            <Button x:Name="b26" Content="100" Height="65" Width="75" Click="Button_Click_24"/>
+            <Button x:Name="b27" Content="200" Height="65" Width="75" Click="Button_Click_25"/>
+            <Button x:Name="b28" Content="300" Height="65" Width="75" Click="Button_Click_26"/>
+            <Button x:Name="b29" Content="400" Height="65" Width="75" Click="Button_Click_27"/>
+            <Button  x:Name="b30" Content="500" Height="65" Width="75" Click="Button_Click_28"/>
+
+        </WrapPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0,470,0,0" HorizontalAlignment="Left" Width="595" Background="LightBlue" Grid.ColumnSpan="2">
+
+            <TextBox  x:Name="vpr" Width="160" Margin="0,0,20,0" TextWrapping="Wrap" Height="80" TextChanged="vpr_TextChanged">
+
+            </TextBox>
+            <TextBox x:Name="otv" Margin="0,0,40,0" Width="160" TextWrapping="Wrap" Height="80"/>
+            <Button Content="Проверить" Width="160" Click="Button_Click_2" Height="80">
+                <Button.Effect>
+                    <DropShadowEffect Color="LightBlue"/>
+                </Button.Effect>
+            </Button>
+
+
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" Background="LightBlue" Grid.Column="1" Margin="438,0,0,0" Height="676" Grid.ColumnSpan="2">
+            <WrapPanel Height="275">
+                <ListBox Height="265" Width="205" x:Name="list2"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Center" SelectionMode="Single" RenderTransformOrigin="0.5,0.5">
+                    <ListBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListBox.RenderTransform>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel MaxHeight="50" MaxWidth="400">
+                                <TextBlock Height="15" Width="800" Text="{Binding Name}"/>
+                                <TextBlock Height="15" Width="800"  Text="{Binding Point}"/>
+
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+            </WrapPanel>
+
+
+
+
+
+
+
+
+            <TextBox x:Name="tx2" Height="65" TextChanged="tx2_TextChanged" Margin="0,0,0,20" Width="165"/>
+            <Button Content="Добавить игрока" Height="45" Click="Button_Click_29" Width="202"/>
+            <WrapPanel Height="155" Background="LightBlue" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <Button Content="Узнать лучшего игрока" Click="Button_Click_30" Height="55"/>
+
+        </StackPanel>
+        <Label Content="Вопрос" FontSize="20"  Grid.ColumnSpan="2" Margin="0,451,533,144"/>
+        <Label Content="Ответ" FontSize="20" Margin="35,451,373,146" Grid.Column="1"/>
+
+
+
+
+
+    </Grid>
+</Window>
